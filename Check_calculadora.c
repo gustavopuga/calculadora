@@ -33,7 +33,6 @@ START_TEST(test_divisao)
 }
 END_TEST
 
-int main(void)
-{
+int main(){
      return 0;
 }
