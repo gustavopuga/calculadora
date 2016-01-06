@@ -33,16 +33,3 @@ int calculadora (char operador, float num1, float num2){
     return resultado;
 }
 
-int main() {
-
-    /*TESTES FRAMEWORK 1*/
-
-
-    /*TESTES FRAMEWORK 2*/
-
-
-    /*TESTES FRAMEWORK 3*/
-
-
-    return 0;
-}
