@@ -1,5 +1,5 @@
 #include <check.h>
-#include "calculadora.h"
+#include "calculadora.c"
 
 START_TEST(test_soma)
 {
