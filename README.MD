@@ -18,3 +18,17 @@ gcc -o teste cunit_calculadora.c -lcunit
 ```
 ./teste
 ```
+
+## Biblioteca Check
+
+### Instalando no linux Debian
+
+```
+sudo apt-get install check
+```
+
+### Rodando
+
+```
+gcc -o teste check_calculadora.c -lcheck -lm -lpthread -lrt
+```
