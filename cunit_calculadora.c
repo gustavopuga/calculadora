@@ -35,25 +35,25 @@ int clean_suite1(void)
    }
 }
 
-test_soma (void){
+void test_soma (void){
     CU_ASSERT(calculadora('+',1,1) == 2);
     CU_ASSERT(calculadora('+',-2,-2) == -4);
     CU_ASSERT(calculadora('+',10,-10) == 0);
 }
 
-test_subtracao (void){
+void test_subtracao (void){
     CU_ASSERT(calculadora('-',1,-1) == 0);
     CU_ASSERT(calculadora('-',-2,-2) == 0);
     CU_ASSERT(calculadora('-',10,-10)== 20);
 }
 
-test_multiplicacao (void){
+void test_multiplicacao (void){
     CU_ASSERT(calculadora('*',1,-1) == -1);
     CU_ASSERT(calculadora('*',-2,-2) == 4);
     CU_ASSERT(calculadora('*',10,-10) == -100);
 }
 
-test_divisao (void){
+void test_divisao (void){
     CU_ASSERT(calculadora('/',1,-1) == -1);
     CU_ASSERT(calculadora('/',-2,-2) == 1);
     CU_ASSERT(calculadora('/',10,-10) == -1);
@@ -75,11 +75,11 @@ int main(){
    }
 
    /* adicionando testes a suite */
-   if ((NULL == CU_add_test(pSuite, "teste soma", test_soma())) ||
-       (NULL == CU_add_test(pSuite, "test subtracao", test_subtracao())) ||
-       (NULL == CU_add_test(pSuite, "test multiplicacao", test_multiplicacao())) ||
-       (NULL == CU_add_test(pSuite, "test divisao", test_divisao())))
-   {
+   if ((NULL == CU_add_test(pSuite, "teste soma", test_soma)) ||
+       (NULL == CU_add_test(pSuite, "test subtracao", test_subtracao)) ||
+       (NULL == CU_add_test(pSuite, "test multiplicacao", test_multiplicacao)) ||
+       (NULL == CU_add_test(pSuite, "test divisao", test_divisao))){
+      
       CU_cleanup_registry();
       return CU_get_error();
    }
