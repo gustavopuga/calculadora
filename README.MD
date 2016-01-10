@@ -4,9 +4,11 @@ O objetivo deste repositório é reunir informações sobre como efetuar testes 
 
 ## Biblioteca CUnit
 
-### Instalando
+### Instalando no linux Debian
 
+```
 sudo apt-get install libcunit1 libcunit1-doc libcunit1-dev
+```
 
 ### Rodando
 
